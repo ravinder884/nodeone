@@ -12,7 +12,7 @@ http.createServer(function (req, res) {
   fs.readFile(filename, function(err, data) {
     if (err) {
       res.writeHead(404, {'Content-Type': 'text/html'});
-      return res.end("404 Not Found. ddd");
+      return res.end("404 Not Found. Go to home");
     } 
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
